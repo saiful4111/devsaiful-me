@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+.ant-progress-text {
+  color: #22d3ee !important;
+  font-size: 20px !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Inter", sans-serif; /* চাইলে কাস্টম ফন্ট */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* গ্লো ইফেক্ট */
+}
+
+
+
+
+
+
+/* Placeholder Color for All AntD Inputs Globally */
+input::placeholder,
+textarea::placeholder,
+.ant-input::placeholder,
+.ant-input-textarea::placeholder,
+.ant-input-affix-wrapper input::placeholder {
+  color: #686c74 !important; /* আপনার পছন্দের কালার */
+  opacity: 1 !important; /* কিছু ব্রাউজারে transparent হয়ে যায়, তাই */
+}
+
+/* Border Color for AntD Inputs and Textareas (Default) */
+.ant-input,
+.ant-input-affix-wrapper, 
+.ant-input-textarea {
+  border-color: #22d3ee !important;
+
+  transition: all 0.2s ease-in-out;
+}
+
+/* On Hover and Focus - Same Style */
+.ant-input:hover,
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus-within,
+.ant-input-textarea:hover,
+.ant-input-textarea:focus {
+  border-color: #2563eb !important; /* Tailwind blue-600 */
+}
+
+/* 🔒 Prevent Chrome autofill background color */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: #ffffff !important; /* Optional: keep white text */
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/*Tab  on Project section */
+
+.custom-tabs .ant-tabs-tab-btn {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-tabs .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+/* Frontend Skills */
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+@keyframes spin-icon {
+  0% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.spin-icon {
+  animation: spin-icon 20s linear infinite;
+}
+
+
+
+/* Drwwer BG Color*/
+.custom-drawer-bg .ant-drawer-body {
+  background: radial-gradient(circle at center, #031919, #000c0c);
+}
+
+/* Drawer title/header background */
+.custom-drawer-bg .ant-drawer-header {
+  background: radial-gradient(circle at center, #031919, #000c0c);
+  color: #22d3ee; /* যদি দরকার হয় */
+}
+
+.custom-drawer-bg .ant-drawer-close {
+  color: #ff0000 !important; /* Tailwind's cyan-400 */
+  background: #1f1f1f !important;
+}
+
+/* ✅ Target inner svg icon directly */
+.custom-drawer-bg .ant-drawer-close svg {
+  fill: #ff0000 !important;
+}
+
+.custom-drawer-bg .ant-drawer-close:hover {
+  color: #e65100; /* Tailwind's cyan-600 */
+}
+
+/* ✅ Close icon on hover */
+.custom-drawer-bg .ant-drawer-close:hover {
+  color: #e65100 !important;
+}
+
+.custom-drawer-bg .ant-drawer-close:hover svg {
+  fill: #e65100 !important;
+}
+
+.custom-progress .ant-progress-text {
+  color: #22d3ee !important;
+  font-size: 20px !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Inter", sans-serif; /* চাইলে কাস্টম ফন্ট */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* গ্লো ইফেক্ট */
+}
+
+.custom-notification {
+  background: radial-gradient(circle at center, #031919, #000c0c) !important;
+}
+
+.custom-notification .ant-notification-notice-message,
+.custom-notification .ant-notification-notice-description {
+  color: #ffffff !important;
+}
+
+.custom-notification .ant-notification-notice-progress {
+  background-color: #22d3ee !important;
+}
+
+/* ✅ শুরুতেই লুকানো থাকবে */
+.anime-text {
+  opacity: 0;  
+  visibility: hidden;
+}
+
+/* Teck stack pills */
+.pill {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  backdrop-filter: blur(4px);
+}
