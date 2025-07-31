@@ -58,7 +58,7 @@ export function EmailTemplate({
         }}
       >
         This email was sent from your portfolio website’s contact form. <br />
-        Design by <strong>Arif</strong> • Powered by Resend 🚀
+        Design by <strong>Saiful</strong> • Powered by Resend 🚀
       </footer>
     </div>
   );

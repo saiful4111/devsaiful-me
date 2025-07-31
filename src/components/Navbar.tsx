@@ -27,30 +27,24 @@ export default function Navbar() {
   return (
     <nav
       style={{
-        background: `radial-gradient(
-    circle at center,
-    #000,
-    #000c0c
-  )`,
+        background: `radial-gradient(circle at center, rgba(0, 0, 0, 0.9), rgba(0, 12, 12, 0.5))`,
       }}
       className="fixed top-0 left-0 w-full z-50 e backdrop-blur-md border-b border-[#031919] shadow-lg"
     >
-      <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-4 py-2">
+      <div className="max-w-[1540px] mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-4 py-2">
         {/* Logo */}
         <Link
           href="/"
-          className=" text-xl font-bold text-white flex items-center gap-4"
+          className=" text-xl font-bold text-white flex items-center gap-1"
         >
           <Image
-            src={
-              "/dev-rabbi-logo.svg"
-            }
+            src={"/devSaiful.png"}
             width={48}
-            height={48}
-            alt="Dev Rabbi Logo"
-            className="!rounded-full  "
+            height={40}
+            alt="Dev Saiful Logo"
+            className="!rounded-full"
           />{" "}
-          <span className="text-2xl">DevSaiful</span>
+          <span className="text-2xl font-cinzel mt-4">DevSaiful</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -58,7 +52,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <div
               key={item.label}
-              className={`focus-visible:text-blue-600 transition-all duration-100  rounded text-cyan-400 hover:text-blue-600   hover:bg-blue-100 w-30 `}
+              className={`focus-visible:text-blue-600  rounded text-gray-300 hover:text-blue-600   hover:bg-blue-100 w-30 transition-all duration-75 transition-timing-function: ease-out;`}
             >
               <Link
                 href={item.href}

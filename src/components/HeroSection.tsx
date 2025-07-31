@@ -87,15 +87,15 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:mt-8"
+      className="relative min-h-screen flex flex-col items-start justify-center text-left px-80 sm:mt-8"
     >
       {/* Main Heading */}
-      <h1 className="hero-heading text-3xl sm:text-4xl md:text-6xl font-bold text-gray-100 leading-tight max-w-4xl mx-auto">
-        Hi, I&apos;m <span className="text-blue-500">Saiful</span> — a frontend
-        developer crafting
-        <span className="block text-[#22d3ee]">
-          modern & interactive web apps.
-        </span>
+      <h1 className="hero-heading text-4xl sm:text-2xl md:text-4xl font-bold text-gray-100 leading-tight max-w-full font-cinzel">
+        Hi, I&apos;m <span className="text-blue-500">Saiful</span> 
+        <br />
+        — a frontend developer
+        <br />
+        crafting <span className="text-[#22d3ee]">modern & interactive</span> web apps.
       </h1>
 
       {/* Sub Text */}
@@ -124,7 +124,7 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="scroll-indicator mt-6  flex flex-col items-center text-gray-400">
+      <div className="scroll-indicator mt-15  flex flex-col items-center text-gray-400 ml-[615px]">
         <span className="text-sm">Scroll</span>
         <ArrowDownOutlined className="text-xl mt-1" />
       </div>

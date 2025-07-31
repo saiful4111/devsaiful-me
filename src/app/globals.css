@@ -1,5 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+AU+NSW:wght@100..400&display=swap');
+
 @import "tailwindcss";
 
+
+.font-cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.font-cinzel-bold {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-playwrite {
+  font-family: "Playwrite AU NSW", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .ant-progress-text {
   color: #22d3ee !important;
   font-size: 20px !important;
@@ -8,11 +31,6 @@
   font-family: "Inter", sans-serif; /* চাইলে কাস্টম ফন্ট */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* গ্লো ইফেক্ট */
 }
-
-
-
-
-
 
 /* Placeholder Color for All AntD Inputs Globally */
 input::placeholder,
@@ -26,7 +44,7 @@ textarea::placeholder,
 
 /* Border Color for AntD Inputs and Textareas (Default) */
 .ant-input,
-.ant-input-affix-wrapper, 
+.ant-input-affix-wrapper,
 .ant-input-textarea {
   border-color: #22d3ee !important;
 
@@ -95,8 +113,6 @@ select:-webkit-autofill {
   animation: spin-icon 20s linear infinite;
 }
 
-
-
 /* Drwwer BG Color*/
 .custom-drawer-bg .ant-drawer-body {
   background: radial-gradient(circle at center, #031919, #000c0c);
@@ -155,7 +171,7 @@ select:-webkit-autofill {
 
 /* ✅ শুরুতেই লুকানো থাকবে */
 .anime-text {
-  opacity: 0;  
+  opacity: 0;
   visibility: hidden;
 }
 

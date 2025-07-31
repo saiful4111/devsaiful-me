@@ -5,6 +5,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "@ant-design/v5-patch-for-react-19";
 import Navbar from "@/components/Navbar";
 import CustomFooter from "@/components/CustomFooter";
+import LottieBackground from "../components/LottieBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Saiful Islam Portfolio",
     images: [
       {
-        url: "/dev-rabbi-logo.svg", // এখন এটা absolute হবে
+        url: "/devSaiful.png", // এখন এটা absolute হবে
         width: 1200,
         height: 630,
         alt: "Saiful Islam Portfolio Logo",
@@ -69,17 +70,13 @@ export const metadata: Metadata = {
     title: "Saiful Islam | Frontend Developer Enthusiast",
     description:
       "Check out Saiful Islam's portfolio showcasing modern React & Next.js projects with a focus on clean UI/UX.",
-    images: [
-      "/dev-rabbi-logo.svg",
-    ],
+    images: ["/devSaiful.png"],
     creator: "@your_twitter_handle",
   },
   icons: {
-    icon: "/dev-rabbi-logo.svg",
-    shortcut:
-      "/dev-rabbi-logo.svg",
-    apple:
-      "/dev-rabbi-logo.svg",
+    icon: "/devSaiful.png",
+    shortcut: "/devSaiful.png",
+    apple: "/devSaiful.png",
   },
   category: "technology",
 };
@@ -92,20 +89,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-black`}
       >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="fixed top-0 left-0 w-full  h-full object-cover -z-10"
-        >
-          <source
-            src="https://res.cloudinary.com/degzi4jma/video/upload/v1753594455/space-bg_ey8biq.mp4"
-            type="video/mp4"
-          />
-        </video>
+        {/* Lottie background animation */}
+        <LottieBackground />
 
         <AntdRegistry>
           <Navbar />
