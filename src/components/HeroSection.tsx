@@ -124,10 +124,14 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="scroll-indicator mt-15  flex flex-col items-center text-gray-400 ml-[615px]">
-        <span className="text-sm">Scroll</span>
-        <ArrowDownOutlined className="text-xl mt-1" />
-      </div>
+     <div className="mt-16 text-gray-400 ml-[565px]">
+          <p className="text-sm">Scroll down to see more content</p>
+          <div className="mt-4 animate-bounce">
+            <div className="w-6 h-10 border-2 border-gray-600 rounded-full mx-auto">
+              <div className="w-1 h-3 bg-gray-400 rounded-full mx-auto mt-2 animate-pulse"></div>
+            </div>
+          </div>
+        </div>
 
       {/* Tech Stack Floating Pills */}
       <div className="tech-pills absolute w-full h-full pointer-events-none">
