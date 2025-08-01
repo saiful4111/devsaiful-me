@@ -87,7 +87,7 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col items-start justify-center text-left px-80 sm:mt-8"
+      className="relative min-h-screen flex flex-col items-start justify-center text-left px-100 sm:mt-8"
     >
       {/* Main Heading */}
       <h1 className="hero-heading text-4xl sm:text-2xl md:text-4xl font-bold text-gray-100 leading-tight max-w-full font-cinzel">
@@ -124,7 +124,7 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-     <div className="mt-16 text-gray-400 ml-[565px]">
+     <div className="mt-16 text-gray-400 w-full flex flex-col items-center">
           <p className="text-sm">Scroll down to see more content</p>
           <div className="mt-4 animate-bounce">
             <div className="w-6 h-10 border-2 border-gray-600 rounded-full mx-auto">
