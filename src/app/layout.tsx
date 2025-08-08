@@ -6,6 +6,7 @@ import "@ant-design/v5-patch-for-react-19";
 import Navbar from "@/components/Navbar";
 import CustomFooter from "@/components/CustomFooter";
 import LottieBackground from "../components/LottieBackground";
+import SplineBg from "@/components/SplineBg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -92,8 +93,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-black`}
       >
         {/* Lottie background animation */}
-        <LottieBackground />
-
+        {/* <LottieBackground /> */}
+        <SplineBg/>
         <AntdRegistry>
           <Navbar />
 

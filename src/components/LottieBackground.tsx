@@ -10,7 +10,7 @@ export default function LottieBackground() {
           src="https://lottie.host/3f695a0a-8dbd-4dcf-9d81-ddfa7bdbdc79/go5i8dAqAL.lottie"
           loop
           autoplay
-          speed={0.3}
+          speed={0.5}
         />
       </div>
     </div>

@@ -54,7 +54,7 @@ export default function Navbar() {
           0 50%
     )`,
           background:
-            "linear-gradient(to bottom, transparent 0%, transparent 48%, #3b82f6 100%)",
+            "linear-gradient(to bottom, transparent 0%, transparent 48%, #18FFFF 100%)",
         }}
         className="fixed top-[2px] left-1/2 -translate-x-1/2  w-[1340px] h-[80px] z-40  backdrop-blur-md shadow-lg"
       ></div>
@@ -90,25 +90,25 @@ export default function Navbar() {
         }}
         className="fixed top-0 left-1/2 -translate-x-1/2  w-[1340px] h-[80px] z-50  backdrop-blur-md border-b shadow-lg "
       >
-        <div className="max-w-[1240px] mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-13">
+        <div className="max-w-[1240px] mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-12">
           {/* Desktop Menu */}
-          <div className="hidden md:flex flex-wrap md:flex-nowrap items-center gap-2 hover:gap-2">
+          <div className="hidden md:flex flex-wrap md:flex-nowrap items-center gap-0">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="group relative px-3 py-2 text-gray-300 hover:text-white transition-colors duration-300 ease-in-out"
+                className="group relative px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 ease-in-out"
               >
                 <span className="flex items-center space-x-2">
                   <span className="text-xl"> {item.icon}</span>
-                  <span>{item.label}</span>
+                  <span >{item.label}</span>
                 </span>
 
                 {/* Underline with glow effect */}
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-green-950 to-cyan-200 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left"></div>
 
                 {/* Glow effect */}
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left blur-sm opacity-75"></div>
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left blur-sm opacity-75"></div>
 
                 {/* Extended glow */}
                 <div className="absolute bottom-0 left-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out blur-md opacity-50"></div>
@@ -122,7 +122,7 @@ export default function Navbar() {
             className=" text-xl font-bold text-white flex flex-col items-center"
           >
             <Image
-              src={"/devSaiful1.png"}
+              src={"/devSaiful.png"}
               width={48}
               height={40}
               alt="Dev Saiful Logo"
@@ -136,18 +136,18 @@ export default function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
-                className="group relative px-3 py-2 text-gray-300 hover:text-white transition-colors duration-300 ease-in-out"
+                className="group relative px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 ease-in-out"
               >
-                <span className="flex items-center">
-                  <span className="text-xl"> {item.icon}</span>
+                <span className="flex items-center space-x-2">
+                  <span className="text-[]"> {item.icon}</span>
                   <span>{item.label}</span>
                 </span>
 
                 {/* Underline with glow effect */}
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-green-950 to-cyan-200 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left"></div>
 
                 {/* Glow effect */}
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left blur-sm opacity-75"></div>
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left blur-sm opacity-75"></div>
 
                 {/* Extended glow */}
                 <div className="absolute bottom-0 left-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out blur-md opacity-50"></div>

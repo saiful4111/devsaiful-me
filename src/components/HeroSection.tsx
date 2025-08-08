@@ -91,11 +91,34 @@ export default function HeroSection() {
     >
       {/* Main Heading */}
       <h1 className="hero-heading text-4xl sm:text-2xl md:text-4xl font-bold text-gray-100 leading-tight max-w-full font-cinzel">
-        Hi, I&apos;m <span className="text-blue-500">Saiful</span> 
+        Hi, I&apos;m{" "}
+        <span
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom,#052E16 1%,#18FFFF 55%,#052E16 99%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          Saiful
+        </span>
         <br />
         — a frontend developer
         <br />
-        crafting <span className="text-[#22d3ee]">modern & interactive</span> web apps.
+        crafting{" "}
+        <span
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom,#052E16 1%,#18FFFF 55%,#052E16 99%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          modern & interactive
+        </span>{" "}
+        web apps.
       </h1>
 
       {/* Sub Text */}
@@ -109,7 +132,7 @@ export default function HeroSection() {
         <Button
           type="primary"
           size="large"
-          className="bg-blue-500 text-white hover:!bg-cyan-400 hover:!text-gray-900 rounded-md shadow-md hover:shadow-lg"
+          className="!bg-transparent !border !border-[#031919]  text-white hover:!bg-cyan-400 hover:!text-gray-900 rounded-md shadow-md hover:shadow-lg"
           icon={<DownloadOutlined />}
         >
           Download CV
@@ -124,14 +147,14 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-     <div className="mt-16 text-gray-400 w-full flex flex-col items-center">
-          <p className="text-sm">Scroll down to see more content</p>
-          <div className="mt-4 animate-bounce">
-            <div className="w-6 h-10 border-2 border-gray-600 rounded-full mx-auto">
-              <div className="w-1 h-3 bg-gray-400 rounded-full mx-auto mt-2 animate-pulse"></div>
-            </div>
+      <div className="mt-16 text-gray-400 w-full flex flex-col items-center">
+        <p className="text-sm">scroll down</p>
+        <div className="mt-4 animate-bounce">
+          <div className="w-6 h-10 border-2 border-gray-600 rounded-full mx-auto">
+            <div className="w-1 h-3 bg-gray-400 rounded-full mx-auto mt-2 animate-pulse"></div>
           </div>
         </div>
+      </div>
 
       {/* Tech Stack Floating Pills */}
       <div className="tech-pills absolute w-full h-full pointer-events-none">
