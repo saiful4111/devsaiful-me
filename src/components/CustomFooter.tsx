@@ -18,7 +18,7 @@ import { FiSend } from "react-icons/fi";
 
 export default function CustomFooter() {
   return (
-    <div className="  py-4 mt-12  ">
+    <div className=" max-w-6xl py-4 mt-12 mx-auto">
       <Card variant="borderless" className="shadow-none !bg-transparent">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 py-8">
           {/* Logo */}
@@ -58,7 +58,7 @@ export default function CustomFooter() {
                 ].map((item) => (
                   <div
                     key={item.label}
-                    className={`focus-visible:text-blue-600 transition-all duration-100 rounded text-cyan-400 hover:text-blue-600 hover:bg-blue-100  `}
+                    className={`focus-visible:text-blue-600 transition-all duration-100 rounded text-teal-300 hover:text-blue-600 hover:bg-blue-100  `}
                   >
                     <Link
                       href={item.href}
@@ -107,7 +107,7 @@ export default function CustomFooter() {
                 ].map((item) => (
                   <div
                     key={item.label}
-                    className={`focus-visible:text-blue-600 transition-all duration-100 rounded text-cyan-400 hover:text-blue-600 hover:bg-blue-100  `}
+                    className={`focus-visible:text-blue-600 transition-all duration-100 rounded text-teal-300 hover:text-blue-600 hover:bg-blue-100  `}
                   >
                     <Link
                       href={item.href}
@@ -129,7 +129,14 @@ export default function CustomFooter() {
           <Link
             href={"/"}
             target="_blank"
-            className="text-blue-500 font-medium ml-1"
+            className="font-medium ml-1"
+             style={{
+            backgroundImage:
+              "linear-gradient(to bottom,#052E16 1%,#18FFFF 55%,#052E16 99%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
           >
             DevSaiful
           </Link>{" "}

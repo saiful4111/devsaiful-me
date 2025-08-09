@@ -115,10 +115,17 @@ function FeaturdProjects() {
     <div
       ref={sectionRef}
       id="view-work"
-      className="max-w-6xl mx-auto text-white py-20 px-2"
+      className="max-w-6xl mx-auto text-white py-20 px-2" 
     >
       <div className="text-center mb-16">
-        <h1 className="projects-heading text-3xl md:text-4xl mb-4 font-semibold text-cyan-400">
+        <h1 className="projects-heading text-3xl md:text-4xl mb-4 font-semibold"
+        style={{
+            backgroundImage:
+              "linear-gradient(to bottom,#052E16 1%,#18FFFF 55%,#052E16 99%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}>
           Featured Projects
         </h1>
         <p className="projects-subheading text-center text-gray-200 mt-2">
@@ -166,7 +173,7 @@ function FeaturdProjects() {
               <div className="mt-4 flex justify-between items-center gap-4">
                 <Link
                   href={`/project/${featurdProject.id}`}
-                  className="!text-cyan-400 hover:!text-white py-1 rounded transition-all duration-150 !no-underline"
+                  className="!text-teal-300 hover:!text-white py-1 rounded transition-all duration-150 !no-underline"
                 >
                   View Case Study →
                 </Link>
@@ -176,7 +183,7 @@ function FeaturdProjects() {
                     href={featurdProject.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="!text-cyan-400 hover:!text-white py-1 rounded transition-all duration-150 !no-underline flex items-center gap-3"
+                    className="!text-teal-300 hover:!text-white py-1 rounded transition-all duration-150 !no-underline flex items-center gap-3"
                   >
                     Visit Live Site <FaExternalLinkAlt />
                   </Link>

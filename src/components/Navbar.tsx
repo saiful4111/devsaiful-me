@@ -40,7 +40,7 @@ export default function Navbar() {
           92% 75%,
           77% 75%,
           
-          
+ 
           79% 50%,
           65% 50%,
           62% 95%,

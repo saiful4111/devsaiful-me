@@ -87,10 +87,10 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col items-start justify-center text-left px-100 sm:mt-8"
+      className="relative min-h-screen flex flex-col items-start justify-center text-left px-100 sm:mt-20" //100
     >
       {/* Main Heading */}
-      <h1 className="hero-heading text-4xl sm:text-2xl md:text-4xl font-bold text-gray-100 leading-tight max-w-full font-cinzel">
+      <h1 className="hero-heading text-3xl sm:text-2xl md:text-3xl font-bold text-gray-100 leading-tight max-w-full font-cinzel">
         Hi, I&apos;m{" "}
         <span
           style={{
@@ -122,13 +122,15 @@ export default function HeroSection() {
       </h1>
 
       {/* Sub Text */}
-      <p className="hero-subtext text-gray-300 mt-4 text-base sm:text-lg md:text-xl max-w-2xl">
+      <p className="hero-subtext text-gray-300 mt-4 text-base sm:text-lg md:text-xl max-w-2xl ml-5">
         I specialize in building fast, responsive, and user-friendly web
-        applications with clean, maintainable code and modern UI libraries.
+        applications with clean, maintainable code and modern UI libraries that
+        combine beautiful design with robust functionality. Always excited about
+        new technologies and creative problem-solving.
       </p>
 
       {/* Buttons */}
-      <div className="hero-btns flex gap-4 md:gap-8 mt-12 flex-wrap justify-center">
+      <div className="hero-btns flex gap-4 md:gap-8 mt-12 flex-wrap justify-center ml-5">
         <Button
           type="primary"
           size="large"
@@ -147,22 +149,22 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="mt-16 text-gray-400 w-full flex flex-col items-center">
+      <div className="mt-30 text-gray-400 w-full flex flex-col items-center pt-20">
         <p className="text-sm">scroll down</p>
         <div className="mt-4 animate-bounce">
-          <div className="w-6 h-10 border-2 border-gray-600 rounded-full mx-auto">
+          <div className="w-7 h-11 border-2 border-teal-600 rounded-full mx-auto">
             <div className="w-1 h-3 bg-gray-400 rounded-full mx-auto mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
 
       {/* Tech Stack Floating Pills */}
-      <div className="tech-pills absolute w-full h-full pointer-events-none">
+      {/* <div className="tech-pills absolute w-full h-full pointer-events-none">
         <span className="pill absolute top-20 left-20">React</span>
         <span className="pill absolute top-20 right-20">Next.js</span>
         <span className="pill absolute bottom-40 left-20">TailwindCSS</span>
         <span className="pill absolute bottom-40 right-20">GSAP</span>
-      </div>
+      </div> */}
     </section>
   );
 }

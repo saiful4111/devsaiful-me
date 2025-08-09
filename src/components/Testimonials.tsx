@@ -67,7 +67,14 @@ export default function Testimonials() {
 
   return (
     <div className="max-w-6xl mx-auto text-white py-20 overflow-hidden">
-      <h1 className="text-3xl md:text-4xl font-semibold text-cyan-400 text-center mb-8">
+      <h1 className="text-3xl md:text-4xl font-semibold text-center mb-8"
+      style={{
+            backgroundImage:
+              "linear-gradient(to bottom,#052E16 1%,#18FFFF 55%,#052E16 99%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}>
         Client Testimonials
       </h1>
 
@@ -89,7 +96,7 @@ export default function Testimonials() {
               <p className="text-sm md:text-base leading-relaxed text-gray-200">
                 {t.feedback}
               </p>
-              <p className="text-cyan-400 mt-4 font-semibold">{t.name}</p>
+              <p className="text-teal-400 mt-4 font-semibold">{t.name}</p>
               <p className="text-xs text-gray-400">{t.role}</p>
             </div>
           ))}

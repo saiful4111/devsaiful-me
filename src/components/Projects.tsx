@@ -121,7 +121,7 @@ export default function Projects() {
           <span key={index} className="text-cyan-400 fade-text anime-text">
             {text}
           </span>
-        ))}
+        ))} 
       </h1>
 
       <Tabs
